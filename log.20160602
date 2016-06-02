@@ -1,0 +1,11 @@
+今天学习可变数组，redis的使用
+mytest=(one two three four five)
+echo mytest #结果是one
+echo ${mytest[2]} #结果是three
+#要显示整个数组变量　需要使用星号作为通配符放在索引位置
+echo ${mytest[*]}
+#unset可以删除数据，但是索引还是在，索引值会丢失
+#如果unset整个数组　unset mytest 整个数组会丢失
+双圆括号允许我们使用高级数学表达式,在双圆括号里面不需要将表达式里面的大于号进行转义 实例见u.sh
+双方括号　针对字符串比较的高级特性　模式匹配
+case 命令
