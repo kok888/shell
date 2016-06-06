@@ -1,0 +1,11 @@
+#!/bin/bash
+name=`basename $0`
+if [ $name = "add" ]
+then
+	total=$[ $1 + $2 ]
+elif [ $name = "mul" ]
+then 
+	echo $[ $1 * $2 ]
+fi
+
+echo $total
